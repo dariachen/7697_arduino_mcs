@@ -32,7 +32,7 @@ MCSControllerPWM control_pwm("control_pwm");
 MCSDisplayPWM display_pwm("display_pwm");
 
 MCSControllerGPS control_gps("control_gps");
-MCSDisplayPWM display_gps("display_gps");
+MCSDisplayGPS display_gps("display_gps");
 
 MCSControllerCategory control_category("control_category");
 MCSDisplayCategory display_category("display_category");
@@ -149,11 +149,6 @@ void loop() {
       Serial.print("Failed to update remote");
       Serial.println(display_float.value());
     }
-    else
-    {
-      Serial.print("display_float.set is called");
-      Serial.println(display_float.value());    
-      }
   }
 
   // check updates for control_hex
@@ -205,8 +200,50 @@ void loop() {
       Serial.println(display_pwm.value());
     }
   }  
+
+  // check updates for control_category
+  if(control_category.updated())
+  {
+    Serial.print("control_category updated, new value = ");
+    Serial.println(control_category.value());
+    if(!display_category.set(control_category.value()))
+    {
+      Serial.print("Failed to update remote");
+      Serial.println(display_category.value());
+    }
+  }  
+
+  // check updates for control_analog
+  if(control_analog.updated())
+  {
+    Serial.print("control_analog updated, new value = ");
+    Serial.println(control_analog.value());
+    if(!display_integer.set(control_analog.value()))
+    {
+      Serial.print("Failed to update remote");
+      Serial.println(display_integer.value());
+    }
+  }  
+
+    
+  // check updates for control_gps
+  if(control_gps.updated())
+  {
+    Serial.print("control_gps updated, new value = ");
+    String gps = String(control_gps.latitude()) + "," + String(control_gps.longitude()) + "," + String(control_gps.altitude());
+    Serial.println(gps);
+    if(!display_string.set(gps))
+    {
+      Serial.print("Failed to update remote");
+      Serial.println(display_string.value());
+    }
+    if(!display_gps.set(control_gps.latitude(), control_gps.longitude(), control_gps.altitude()))
+    {
+      Serial.print("Failed to update remote");
+    }
+  }  
   
-  
+
   // check if need to re-connect
   while(!mcs.connected())
   {
