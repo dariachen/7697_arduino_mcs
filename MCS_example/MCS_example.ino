@@ -3,8 +3,8 @@
 #include "MCS.h"
 
 // Assign AP ssid / password here
-#define _SSID "daria"
-#define _KEY  "0918410123"
+#define _SSID "mcs"
+#define _KEY  "1234"
 
 // Assign Device ID, Device Key, MCS server IP and port.
 MCSDevice mcs("DGW8G2ox", "Njefq0JvAfMB3kDE");
