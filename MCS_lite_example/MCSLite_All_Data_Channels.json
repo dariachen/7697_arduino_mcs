@@ -1,0 +1,240 @@
+{
+	"prototypeName": "MCS LITE PROTOTYPE",
+	"version": "0.1",
+	"prototypeDescription": "prototype is updated by daria on 20170531_05:02:46",
+	"prototypeImageURL": "",
+	"isActive": true,
+	"isPublic": false,
+	"datachannels": [
+		{
+			"datachannelId": "control_float",
+			"datachannelName": "control_float name",
+			"datachannelDescription": "control_float description",
+			"type": 1,
+			"channelType": {
+				"id": 2,
+				"name": "Float"
+			},
+			"isHidden": true,
+			"format": {
+				"unit": {
+					"value": "km"
+				},
+				"lowerbound": {
+					"value": "0"
+				},
+				"upperbound": {
+					"value": "100"
+				}
+			},
+			"isActive": true
+		},
+		{
+			"datachannelId": "control_boolean",
+			"datachannelName": "control_boolean name",
+			"datachannelDescription": "control_boolean description",
+			"type": 1,
+			"channelType": {
+				"id": 7,
+				"name": "Switch"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		},
+		{
+			"datachannelId": "display_hex",
+			"datachannelName": "display_hex name",
+			"datachannelDescription": "display_hex description",
+			"type": 2,
+			"channelType": {
+				"id": 4,
+				"name": "Hex"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		},
+		{
+			"datachannelId": "control_hex",
+			"datachannelName": "control_hex name",
+			"datachannelDescription": "control_hex description",
+			"type": 1,
+			"channelType": {
+				"id": 4,
+				"name": "Hex"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		},
+		{
+			"datachannelId": "display_pwm",
+			"datachannelName": "display_pwm name",
+			"datachannelDescription": "display_pwm description",
+			"type": 2,
+			"channelType": {
+				"id": 12,
+				"name": "PWM"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		},
+		{
+			"datachannelId": "control_integer",
+			"datachannelName": "control_integer name",
+			"datachannelDescription": "control_integer description",
+			"type": 1,
+			"channelType": {
+				"id": 1,
+				"name": "Integer"
+			},
+			"isHidden": true,
+			"format": {
+				"unit": {
+					"value": "km"
+				},
+				"lowerbound": {
+					"value": "0"
+				},
+				"upperbound": {
+					"value": "1000"
+				}
+			},
+			"isActive": true
+		},
+		{
+			"datachannelId": "control_string",
+			"datachannelName": "control_string name",
+			"datachannelDescription": "control_string description",
+			"type": 1,
+			"channelType": {
+				"id": 5,
+				"name": "String"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		},
+		{
+			"datachannelId": "control_gpio",
+			"datachannelName": "control_gpio name",
+			"datachannelDescription": "control_gpio description",
+			"type": 1,
+			"channelType": {
+				"id": 11,
+				"name": "GPIO"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		},
+		{
+			"datachannelId": "display_gpio",
+			"datachannelName": "display_gpio name",
+			"datachannelDescription": "display_gpio description",
+			"type": 2,
+			"channelType": {
+				"id": 11,
+				"name": "GPIO"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		},
+		{
+			"datachannelId": "control_pwm",
+			"datachannelName": "control_pwm name",
+			"datachannelDescription": "control_pwm description",
+			"type": 1,
+			"channelType": {
+				"id": 12,
+				"name": "PWM"
+			},
+			"isHidden": true,
+			"format": {
+				"lowerbound": {
+					"value": "0"
+				},
+				"upperbound": {
+					"value": "555"
+				}
+			},
+			"isActive": true
+		},
+		{
+			"datachannelId": "display_integer",
+			"datachannelName": "display_integer name",
+			"datachannelDescription": "display_integer description",
+			"type": 2,
+			"channelType": {
+				"id": 1,
+				"name": "Integer"
+			},
+			"isHidden": true,
+			"format": {
+				"unit": {
+					"value": "kg"
+				},
+				"lowerbound": {
+					"value": "-100"
+				},
+				"upperbound": {
+					"value": "1000"
+				}
+			},
+			"isActive": true
+		},
+		{
+			"datachannelId": "display_boolean",
+			"datachannelName": "display_boolean name",
+			"datachannelDescription": "display_boolean description",
+			"type": 2,
+			"channelType": {
+				"id": 3,
+				"name": "Switch"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		},
+		{
+			"datachannelId": "display_float",
+			"datachannelName": "display_float name",
+			"datachannelDescription": "display_float description",
+			"type": 2,
+			"channelType": {
+				"id": 2,
+				"name": "Float"
+			},
+			"isHidden": true,
+			"format": {
+				"unit": {
+					"value": "kg"
+				},
+				"lowerbound": {
+					"value": "-100"
+				},
+				"upperbound": {
+					"value": "-1000"
+				}
+			},
+			"isActive": true
+		},
+		{
+			"datachannelId": "display_string",
+			"datachannelName": "display_string name",
+			"datachannelDescription": "display_string description",
+			"type": 2,
+			"channelType": {
+				"id": 5,
+				"name": "String"
+			},
+			"isHidden": true,
+			"format": {},
+			"isActive": true
+		}
+	],
+	"source": "mcs-lite"
+}

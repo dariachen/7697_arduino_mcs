@@ -1,0 +1,1227 @@
+{
+  "prototype": {
+    "prodName": "prototype_PROD_1027",
+    "description": "",
+    "developmentNote": null,
+    "prodAppTypeId": 1,
+    "prodRlsStatusTypeId": 1,
+    "version": "v2.0",
+    "displayConfigs": [
+      {
+        "format": {},
+        "displayType": 1,
+        "displayOrder": 1,
+        "streamTypeId": 7,
+        "dataChnIds": [
+          "control_boolean"
+        ],
+        "showHistory": false,
+        "configs": {
+          "block": {}
+        }
+      },
+      {
+        "displayType": 10,
+        "displayOrder": 2,
+        "streamTypeId": 10,
+        "dataChnIds": [
+          "control_category"
+        ],
+        "showHistory": false,
+        "configs": {
+          "numberOfCategory": 2,
+          "format": {
+            "key1 name": {
+              "displayName": "Key1 name",
+              "type": "key1",
+              "required": true,
+              "name": "key1 name"
+            },
+            "key1 value": {
+              "displayName": "Key1 value",
+              "type": "string",
+              "required": true,
+              "name": "key1 value"
+            },
+            "key2 name": {
+              "displayName": "Key2 name",
+              "type": "key2",
+              "required": true,
+              "name": "key2 name"
+            },
+            "key2 value": {
+              "displayName": "Key2 value",
+              "type": "string",
+              "required": true,
+              "name": "key2 value"
+            }
+          },
+          "limit": {
+            "key1 name": 5,
+            "key2 name": 5
+          },
+          "block": {}
+        },
+        "format": [
+          {
+            "name": "key1",
+            "value": "0"
+          },
+          {
+            "name": "key2",
+            "value": "100"
+          }
+        ]
+      },
+      {
+        "format": {
+          "lowerbound": "0",
+          "upperbound": "100",
+          "unitTypes": 1
+        },
+        "displayType": 14,
+        "displayOrder": 3,
+        "streamTypeId": 1,
+        "dataChnIds": [
+          "control_integer"
+        ],
+        "showHistory": false,
+        "configs": {
+          "format": {
+            "lowerbound": {
+              "displayName": "Lowerbound",
+              "type": "number",
+              "required": true
+            },
+            "upperbound": {
+              "displayName": "Upperbound",
+              "type": "number",
+              "required": true
+            },
+            "unitTypes": {
+              "displayName": "UnitTypes",
+              "type": "category-units",
+              "required": true
+            }
+          },
+          "block": {}
+        }
+      },
+      {
+        "format": {
+          "lowerbound": "0",
+          "upperbound": "100",
+          "unitTypes": 1
+        },
+        "displayType": 15,
+        "displayOrder": 4,
+        "streamTypeId": 2,
+        "dataChnIds": [
+          "control_float"
+        ],
+        "showHistory": false,
+        "configs": {
+          "format": {
+            "lowerbound": {
+              "displayName": "Lowerbound",
+              "type": "float",
+              "required": true
+            },
+            "upperbound": {
+              "displayName": "Upperbound",
+              "type": "float",
+              "required": true
+            },
+            "unitTypes": {
+              "displayName": "UnitTypes",
+              "type": "category-units",
+              "required": true
+            }
+          },
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 16,
+        "displayOrder": 5,
+        "streamTypeId": 4,
+        "dataChnIds": [
+          "control_hex"
+        ],
+        "showHistory": false,
+        "configs": {
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 17,
+        "displayOrder": 6,
+        "streamTypeId": 5,
+        "dataChnIds": [
+          "control_string"
+        ],
+        "showHistory": false,
+        "configs": {
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 18,
+        "displayOrder": 7,
+        "streamTypeId": 6,
+        "dataChnIds": [
+          "control_gps"
+        ],
+        "showHistory": false,
+        "configs": {
+          "graph": "gpsinput",
+          "card": {
+            "default": 2,
+            "showHistory": 3
+          },
+          "history": "openGPSHistory",
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 19,
+        "displayOrder": 8,
+        "streamTypeId": 11,
+        "dataChnIds": [
+          "control_gpio"
+        ],
+        "showHistory": false,
+        "configs": {
+          "graph": "gpio",
+          "history": true,
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 20,
+        "displayOrder": 9,
+        "streamTypeId": 12,
+        "dataChnIds": [
+          "control_pwm"
+        ],
+        "showHistory": false,
+        "configs": {
+          "graph": "pwm",
+          "history": true,
+          "block": {}
+        }
+      },
+      {
+        "format": {
+          "showCurrent": true,
+          "lowerbound": "0",
+          "upperbound": "100"
+        },
+        "displayType": 27,
+        "displayOrder": 10,
+        "streamTypeId": 13,
+        "dataChnIds": [
+          "control_analog"
+        ],
+        "showHistory": false,
+        "configs": {
+          "format": {
+            "lowerbound": {
+              "displayName": "Lowerbound",
+              "type": "number",
+              "placeholder": "Integer only",
+              "required": true
+            },
+            "upperbound": {
+              "displayName": "Upperbound",
+              "type": "number",
+              "placeholder": "Integer only",
+              "required": true
+            },
+            "showCurrent": {
+              "displayName": "Show current value",
+              "defaultValue": true,
+              "type": "checkbox"
+            }
+          },
+          "graph": "line",
+          "history": true,
+          "block": {}
+        }
+      },
+      {
+        "format": {
+          "showCurrent": true,
+          "up": "up",
+          "down": "down",
+          "left": "left",
+          "right": "right",
+          "actionA": "A",
+          "actionB": "B"
+        },
+        "displayType": 28,
+        "displayOrder": 11,
+        "streamTypeId": 14,
+        "dataChnIds": [
+          "control_gamepad"
+        ],
+        "showHistory": false,
+        "configs": {
+          "card": {
+            "default": 2
+          },
+          "format": {
+            "up": {
+              "displayName": "Up",
+              "type": "string",
+              "placeholder": "Input value",
+              "required": true
+            },
+            "down": {
+              "displayName": "Down",
+              "type": "string",
+              "placeholder": "Input value",
+              "required": true
+            },
+            "left": {
+              "displayName": "Left",
+              "type": "string",
+              "placeholder": "Input value",
+              "required": true
+            },
+            "right": {
+              "displayName": "Right",
+              "type": "string",
+              "placeholder": "Input value",
+              "required": true
+            },
+            "actionA": {
+              "displayName": "Button A",
+              "type": "string",
+              "placeholder": "Input value"
+            },
+            "actionB": {
+              "displayName": "Button B",
+              "type": "string",
+              "placeholder": "Input value"
+            },
+            "showCurrent": {
+              "displayName": "Show current value",
+              "defaultValue": true,
+              "type": "checkbox"
+            }
+          },
+          "history": false,
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 2,
+        "displayOrder": 12,
+        "streamTypeId": 3,
+        "dataChnIds": [
+          "display_boolean"
+        ],
+        "showHistory": false,
+        "configs": {
+          "history": false,
+          "block": {}
+        }
+      },
+      {
+        "displayType": 3,
+        "displayOrder": 13,
+        "streamTypeId": 10,
+        "dataChnIds": [
+          "display_category"
+        ],
+        "showHistory": false,
+        "configs": {
+          "history": false,
+          "numberOfCategory": 2,
+          "format": {
+            "key1 name": {
+              "displayName": "Key1 name",
+              "type": "key1",
+              "required": true
+            },
+            "key1 value": {
+              "displayName": "Key1 value",
+              "type": "string",
+              "required": true
+            },
+            "key2 name": {
+              "displayName": "Key2 name",
+              "type": "key2",
+              "required": true
+            },
+            "key2 value": {
+              "displayName": "Key2 value",
+              "type": "string",
+              "required": true
+            }
+          },
+          "limit": {
+            "key1 name": 5,
+            "key2 name": 5
+          },
+          "block": {}
+        },
+        "format": [
+          {
+            "name": "key1",
+            "value": "0"
+          },
+          {
+            "name": "key2",
+            "value": "100"
+          }
+        ]
+      },
+      {
+        "format": {
+          "unitTypes": 1
+        },
+        "displayType": 4,
+        "displayOrder": 14,
+        "streamTypeId": 1,
+        "dataChnIds": [
+          "display_integer"
+        ],
+        "showHistory": false,
+        "configs": {
+          "graph": "line",
+          "history": true,
+          "format": {
+            "unitTypes": {
+              "displayName": "UnitTypes",
+              "type": "category-units",
+              "required": true
+            }
+          },
+          "block": {}
+        }
+      },
+      {
+        "format": {
+          "unitTypes": 1
+        },
+        "displayType": 5,
+        "displayOrder": 15,
+        "streamTypeId": 2,
+        "dataChnIds": [
+          "display_float"
+        ],
+        "showHistory": false,
+        "configs": {
+          "history": true,
+          "graph": "line",
+          "format": {
+            "unitTypes": {
+              "displayName": "UnitTypes",
+              "type": "category-units",
+              "required": true
+            }
+          },
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 8,
+        "displayOrder": 16,
+        "streamTypeId": 4,
+        "dataChnIds": [
+          "display_hex"
+        ],
+        "showHistory": false,
+        "configs": {
+          "history": false,
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 6,
+        "displayOrder": 17,
+        "streamTypeId": 5,
+        "dataChnIds": [
+          "display_string"
+        ],
+        "showHistory": false,
+        "configs": {
+          "history": false,
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 7,
+        "displayOrder": 18,
+        "streamTypeId": 6,
+        "dataChnIds": [
+          "display_gps"
+        ],
+        "showHistory": false,
+        "configs": {
+          "card": {
+            "default": 1,
+            "showHistory": 3
+          },
+          "history": "openGPSHistory",
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 21,
+        "displayOrder": 19,
+        "streamTypeId": 11,
+        "dataChnIds": [
+          "display_gpio"
+        ],
+        "showHistory": false,
+        "configs": {
+          "graph": "gpio",
+          "history": true,
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 22,
+        "displayOrder": 20,
+        "streamTypeId": 12,
+        "dataChnIds": [
+          "display_pwm"
+        ],
+        "showHistory": false,
+        "configs": {
+          "graph": "pwm",
+          "history": true,
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 31,
+        "displayOrder": 21,
+        "streamTypeId": 15,
+        "dataChnIds": [
+          "display_image"
+        ],
+        "showHistory": false,
+        "configs": {
+          "card": {
+            "default": 1
+          },
+          "note": [
+            {
+              "name": "File type supported",
+              "content": "JPG, JPEG, PNG"
+            },
+            {
+              "name": "Maximum resolution supported",
+              "content": "1280x960 - 1 Megapixel"
+            },
+            {
+              "name": "Image size limits",
+              "content": "1MB"
+            }
+          ],
+          "history": "openImageHistory",
+          "block": {}
+        }
+      },
+      {
+        "format": {},
+        "displayType": 30,
+        "displayOrder": 22,
+        "streamTypeId": 16,
+        "dataChnIds": [
+          "display_video"
+        ],
+        "showHistory": false,
+        "configs": {
+          "card": {
+            "default": 2,
+            "showHistory": 2
+          },
+          "note": [
+            {
+              "name": "Video format",
+              "content": "MPEG1"
+            },
+            {
+              "name": "Maximum resolution supported",
+              "content": "320x240"
+            },
+            {
+              "name": "Maximum fps supported",
+              "content": "30fps"
+            },
+            {
+              "name": "Usage limitation",
+              "content": "3GB video view / per device / per month"
+            }
+          ],
+          "history": false,
+          "block": {}
+        }
+      },
+      {
+        "displayType": 11,
+        "displayOrder": 23,
+        "streamTypeId": 10,
+        "dataChnIds": [
+          "test"
+        ],
+        "showHistory": false,
+        "format": [
+          {
+            "name": "k1",
+            "value": "100"
+          },
+          {
+            "name": "k2",
+            "value": "200"
+          },
+          {
+            "name": "k3",
+            "value": "300"
+          }
+        ]
+      }
+    ],
+    "saleReleaseDate": null,
+    "saleDiscontinuousDate": null,
+    "isLongConnectionNeeded": true,
+    "isSerialNeeded": false,
+    "isInterpreterCloudNeeded": false,
+    "status": true,
+    "prodImgURL": "",
+    "prodDesc": "",
+    "chipId": 2
+  },
+  "dataChannels": [
+    {
+      "dataChnId": "test",
+      "name": "test",
+      "description": "test",
+      "channelType": {
+        "dataChnTypeId": 10,
+        "name": "Category"
+      },
+      "streamId": 33703,
+      "format": {
+        "results": [
+          {
+            "name": "k1",
+            "value": "100"
+          },
+          {
+            "name": "k2",
+            "value": "200"
+          },
+          {
+            "name": "k3",
+            "value": "300"
+          }
+        ],
+        "fulfillmentValue": [
+          {
+            "name": "k1",
+            "value": "100"
+          },
+          {
+            "name": "k2",
+            "value": "200"
+          },
+          {
+            "name": "k3",
+            "value": "300"
+          }
+        ]
+      },
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "control_gpio",
+      "name": "control_gpio",
+      "description": "control_gpio",
+      "channelType": {
+        "dataChnTypeId": 11,
+        "name": "GPIO"
+      },
+      "streamId": 31927,
+      "format": {},
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_video",
+      "name": "display_video",
+      "description": "display_video",
+      "channelType": {
+        "dataChnTypeId": 16,
+        "name": "Video Streaming"
+      },
+      "streamId": 31941,
+      "format": {},
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "control_float",
+      "name": "control_float",
+      "description": "control_float",
+      "channelType": {
+        "dataChnTypeId": 2,
+        "name": "Float"
+      },
+      "streamId": 31923,
+      "format": {
+        "lowerbound": "0",
+        "upperbound": "100",
+        "unitTypes": 1
+      },
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": 1,
+        "name": "ampere"
+      }
+    },
+    {
+      "dataChnId": "control_string",
+      "name": "control_string",
+      "description": "control_string",
+      "channelType": {
+        "dataChnTypeId": 5,
+        "name": "String"
+      },
+      "streamId": 31925,
+      "format": {},
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_boolean",
+      "name": "display_boolean",
+      "description": "display_boolean",
+      "channelType": {
+        "dataChnTypeId": 3,
+        "name": "Switch"
+      },
+      "streamId": 31931,
+      "format": {},
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_hex",
+      "name": "display_hex",
+      "description": "display_hex",
+      "channelType": {
+        "dataChnTypeId": 4,
+        "name": "Hex"
+      },
+      "streamId": 31935,
+      "format": {},
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_integer",
+      "name": "display_integer",
+      "description": "display_integer",
+      "channelType": {
+        "dataChnTypeId": 1,
+        "name": "Integer"
+      },
+      "streamId": 31933,
+      "format": {
+        "unitTypes": 3
+      },
+      "isHidden": true,
+      "isControllable": false,
+      "unitType": {
+        "id": 3,
+        "name": "bit"
+      }
+    },
+    {
+      "dataChnId": "control_analog",
+      "name": "control_analog",
+      "description": "control_analog",
+      "channelType": {
+        "dataChnTypeId": 13,
+        "name": "Analog"
+      },
+      "streamId": 31929,
+      "format": {
+        "showCurrent": true,
+        "lowerbound": "0",
+        "upperbound": "100"
+      },
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_gps",
+      "name": "display_gps",
+      "description": "display_gps",
+      "channelType": {
+        "dataChnTypeId": 6,
+        "name": "GPS"
+      },
+      "streamId": 31937,
+      "format": {},
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_pwm",
+      "name": "display_pwm",
+      "description": "display_pwm",
+      "channelType": {
+        "dataChnTypeId": 12,
+        "name": "PWM"
+      },
+      "streamId": 31939,
+      "format": {},
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "control_category",
+      "name": "control_category",
+      "description": "control_category",
+      "channelType": {
+        "dataChnTypeId": 10,
+        "name": "Category"
+      },
+      "streamId": 31921,
+      "format": {
+        "results": [
+          {
+            "name": "key1",
+            "value": "0"
+          },
+          {
+            "name": "key2",
+            "value": "100"
+          }
+        ],
+        "fulfillmentValue": [
+          {
+            "name": "key1",
+            "value": "0"
+          },
+          {
+            "name": "key2",
+            "value": "100"
+          }
+        ]
+      },
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "control_gps",
+      "name": "control_gps",
+      "description": "control_gps",
+      "channelType": {
+        "dataChnTypeId": 6,
+        "name": "GPS"
+      },
+      "streamId": 31926,
+      "format": {},
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "control_pwm",
+      "name": "control_pwm",
+      "description": "control_pwm",
+      "channelType": {
+        "dataChnTypeId": 12,
+        "name": "PWM"
+      },
+      "streamId": 31928,
+      "format": {},
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "control_boolean",
+      "name": "control_boolean",
+      "description": "control_boolean",
+      "channelType": {
+        "dataChnTypeId": 7,
+        "name": "Switch"
+      },
+      "streamId": 31920,
+      "format": {},
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "control_gamepad",
+      "name": "control_gamepad",
+      "description": "control_gamepad",
+      "channelType": {
+        "dataChnTypeId": 14,
+        "name": "Joystick"
+      },
+      "streamId": 31930,
+      "format": {
+        "showCurrent": true,
+        "up": "up",
+        "down": "down",
+        "left": "left",
+        "right": "right",
+        "actionA": "A",
+        "actionB": "B"
+      },
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_category",
+      "name": "display_category",
+      "description": "display_category",
+      "channelType": {
+        "dataChnTypeId": 10,
+        "name": "Category"
+      },
+      "streamId": 31932,
+      "format": {
+        "results": [
+          {
+            "name": "key1",
+            "value": "0"
+          },
+          {
+            "name": "key2",
+            "value": "100"
+          }
+        ],
+        "fulfillmentValue": [
+          {
+            "name": "key1",
+            "value": "0"
+          },
+          {
+            "name": "key2",
+            "value": "100"
+          }
+        ]
+      },
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_string",
+      "name": "display_string",
+      "description": "display_string",
+      "channelType": {
+        "dataChnTypeId": 5,
+        "name": "String"
+      },
+      "streamId": 31936,
+      "format": {},
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_float",
+      "name": "display_float",
+      "description": "display_float",
+      "channelType": {
+        "dataChnTypeId": 2,
+        "name": "Float"
+      },
+      "streamId": 31934,
+      "format": {
+        "unitTypes": 1
+      },
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": 1,
+        "name": "ampere"
+      }
+    },
+    {
+      "dataChnId": "control_integer",
+      "name": "control_integer",
+      "description": "control_integer",
+      "channelType": {
+        "dataChnTypeId": 1,
+        "name": "Integer"
+      },
+      "streamId": 31922,
+      "format": {
+        "lowerbound": "0",
+        "upperbound": "100",
+        "unitTypes": 1
+      },
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": 1,
+        "name": "ampere"
+      }
+    },
+    {
+      "dataChnId": "control_hex",
+      "name": "control_hex",
+      "description": "control_hex",
+      "channelType": {
+        "dataChnTypeId": 4,
+        "name": "Hex"
+      },
+      "streamId": 31924,
+      "format": {},
+      "isHidden": false,
+      "isControllable": true,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_image",
+      "name": "display_image",
+      "description": "display_image",
+      "channelType": {
+        "dataChnTypeId": 15,
+        "name": "Image"
+      },
+      "streamId": 31940,
+      "format": {},
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    },
+    {
+      "dataChnId": "display_gpio",
+      "name": "display_gpio",
+      "description": "display_gpio",
+      "channelType": {
+        "dataChnTypeId": 11,
+        "name": "GPIO"
+      },
+      "streamId": 31938,
+      "format": {},
+      "isHidden": false,
+      "isControllable": false,
+      "unitType": {
+        "id": null,
+        "name": null
+      }
+    }
+  ],
+  "triggerActions": [
+    {
+      "name": "GCM",
+      "description": null,
+      "defaultRepeatNtfCount": 1,
+      "isDefaultOn": true,
+      "isMandatory": true,
+      "isEditable": true,
+      "isActivated": true,
+      "ntfcrits": [
+        {
+          "streamId": 31933,
+          "operand": ">",
+          "defaultThresholdValue": 10,
+          "dataChnId": "display_integer",
+          "name": "display_integer",
+          "description": "display_integer",
+          "format": {
+            "unitTypes": 3
+          },
+          "unitTypeId": 3
+        }
+      ],
+      "ntfmths": [
+        {
+          "ntfMthTypeId": 2,
+          "title": "",
+          "content": "${deviceId}, ${deviceName} and ${value}.",
+          "name": "Mobile Push"
+        }
+      ]
+    },
+    {
+      "name": "email",
+      "description": null,
+      "defaultRepeatNtfCount": 1,
+      "isDefaultOn": true,
+      "isMandatory": true,
+      "isEditable": true,
+      "isActivated": true,
+      "ntfcrits": [
+        {
+          "streamId": 31933,
+          "operand": ">",
+          "defaultThresholdValue": 10,
+          "dataChnId": "display_integer",
+          "name": "display_integer",
+          "description": "display_integer",
+          "format": {
+            "unitTypes": 3
+          },
+          "unitTypeId": 3
+        }
+      ],
+      "ntfmths": [
+        {
+          "ntfMthTypeId": 1,
+          "title": "Here you go",
+          "content": "${deviceId}、${deviceName}、${value}。",
+          "name": "Email"
+        }
+      ]
+    },
+    {
+      "name": "webhooks",
+      "description": "",
+      "defaultRepeatNtfCount": 1,
+      "isDefaultOn": true,
+      "isMandatory": true,
+      "isEditable": true,
+      "isActivated": true,
+      "ntfcrits": [
+        {
+          "streamId": 31933,
+          "operand": ">",
+          "defaultThresholdValue": 10,
+          "dataChnId": "display_integer",
+          "name": "display_integer",
+          "description": "display_integer",
+          "format": {
+            "unitTypes": 3
+          },
+          "unitTypeId": 3
+        }
+      ],
+      "ntfmths": [
+        {
+          "ntfMthTypeId": 3,
+          "title": "",
+          "content": "${deviceId},${deviceName},${value}",
+          "url": "http://localhost",
+          "name": "Webhooks"
+        }
+      ]
+    },
+    {
+      "name": "no_PROD_1027",
+      "description": "created by PROD_1027",
+      "defaultRepeatNtfCount": 1,
+      "isDefaultOn": true,
+      "isMandatory": true,
+      "isEditable": true,
+      "isActivated": true,
+      "ntfcrits": [
+        {
+          "streamId": 31933,
+          "operand": ">",
+          "defaultThresholdValue": 100,
+          "dataChnId": "display_integer",
+          "name": "display_integer",
+          "description": "display_integer",
+          "format": {
+            "unitTypes": 3
+          },
+          "unitTypeId": 3
+        }
+      ],
+      "ntfmths": [
+        {
+          "ntfMthTypeId": 1,
+          "title": "PROD_1027",
+          "content": "PROD_1027",
+          "name": "Email"
+        }
+      ]
+    }
+  ]
+}
