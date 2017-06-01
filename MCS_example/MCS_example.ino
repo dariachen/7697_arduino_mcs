@@ -190,11 +190,11 @@ void loop() {
   // check updates for control_pwm
   if(control_pwm.updated())
   {
-    Serial.print("control_pwm updated, new value = ");
-    Serial.println(control_pwm.value());
+    Serial.print("control_pwm updated, new duty cycle = ");
+    Serial.println(control_pwm.dutyCycle());
     Serial.print("control_pwm updated, new period = ");
     Serial.println(control_pwm.period());
-    if(!display_pwm.set(control_pwm.value(), control_pwm.period()))
+    if(!display_pwm.set(control_pwm.dutyCycle(), control_pwm.period()))
     {
       Serial.print("Failed to update remote");
       Serial.println(display_pwm.value());
